@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .zebrado {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Notas</caption>
+        <thead>
+            <tr class="zebrado">
+                <th rowspan="2">
+                    Area
+                </th>
+                <th rowspan="2">
+                    Disiplina
+                </th>
+                <th colspan="2">
+                    Notas
+                </th>
+            
+                <th rowspan="2">Media</th>
+            </tr>
+            <tr class="zebrado">
+                <th>
+                    Nota 1
+                </th>
+                <th>
+                    Nota 2
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>7,5</td>
+                <td>9,5</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>8,5</td>
+                <td>10</td>
+                <td>9,5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>8,5</td>
+                <td>9,5</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="zebrado">
+                <th colspan="4">Media De Exatas</th>
+                <td>9</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">
+                    Humanas
+                </th>
+                <td>Historia</td>
+                <td>8,5</td>
+                <td>9</td>
+                <td>8,8</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>9,5</td>
+                <td>10</td>
+                <td>9,8</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr class="zebrado">
+                <th colspan="4">Media De Humanas</th>
+                <td>9,5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

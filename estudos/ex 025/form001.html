@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulario</h1>  
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="iNome">
+                Nome:
+            </label>
+             <input type="text" name="Nome" id="iNome"></p>
+        <p><label for="iSobrenome">
+                Sobrenome:
+            </label>
+             <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+ <!-- diferença de name para id  name:para linguagem php eu preciso que todo input tenha um nome
+    esse nome e melhor para HTML e CSS-->
+<!-- id: para linguagem para javascript e melhor e oq vem automaticamente e inclusive e util para label  -->
